@@ -1,3 +1,9 @@
 {
-  "name": "1910 Studios"
+  "dependencies": {
+    "nib": "^1.1.0"
+  },
+  "scripts": {
+    "jade": "jade --watch --pretty lib/index.jade --out public",
+    "stylus": "stylus --use nib --watch lib/style.styl --out public/css"
+  }
 }

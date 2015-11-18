@@ -1,0 +1,132 @@
+@font-face {
+  font-family: techni;
+  src: url("../fonts/AR-Techni.ttf");
+}
+@font-face {
+  font-family: titlefont;
+  src: url("../fonts/basictitlefont.ttf");
+}
+.wrapper {
+  padding-top: 25%;
+  padding-bottom: 5%;
+}
+h2 {
+  color: #fff;
+  font-family: titlefont;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.3) -2px 4px 0;
+  margin: 0;
+  padding: 0.3rem;
+}
+.black {
+  background-color: #000;
+}
+.orange {
+  background-color: #ff6b00;
+}
+.boldTitle {
+  font-family: techni;
+  font-size: 2.7rem;
+}
+.action {
+  text-align: center;
+}
+.text {
+  background-color: #f2f2f2;
+  width: 40%;
+  margin: 0.5rem;
+}
+.textarea {
+  background-color: #f2f2f2;
+  width: 87%;
+  height: 7rem;
+  margin: 0.5rem;
+}
+.submit {
+  border-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+  background: -webkit-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  background: -moz-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  background: -o-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  background: -ms-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  background: linear-gradient(to bottom right, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  width: 30%;
+}
+@media screen and (min-width: 600px) {
+  .wrapper {
+    padding-top: 20%;
+  }
+  .text {
+    width: 41%;
+  }
+  h2 {
+    font-size: 4.5rem;
+  }
+  .boldTitle {
+    font-size: 4.7rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding-top: 15%;
+  }
+  .text {
+    width: 42%;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  .boldTitle {
+    font-size: 6.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    padding-top: 8%;
+  }
+  .text {
+    width: 43%;
+  }
+  h2 {
+    font-size: 7rem;
+  }
+  .boldTitle {
+    font-size: 7.2rem;
+  }
+}
+.formWrap {
+  text-align: center;
+}
+input {
+  background-color: #f2f2f2;
+}
+.button {
+  border-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+  background: -webkit-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  background: -moz-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  background: -o-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  background: -ms-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  background: linear-gradient(to bottom right, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
+  width: 30%;
+}
+.button:hover {
+  background: -webkit-linear-gradient(top left, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
+  background: -moz-linear-gradient(top left, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
+  background: -o-linear-gradient(top left, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
+  background: -ms-linear-gradient(top left, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
+  background: linear-gradient(to bottom right, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
+}
+.mc-field-group {
+  display: inline-block;
+  margin: 1rem;
+}
+.email {
+  margin-left: 2.2rem;
+}
