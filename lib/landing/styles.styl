@@ -10,6 +10,18 @@ h2
 	text-shadow rgba(0,0,0,.3) -2px 4px 0
 	margin 0
 	padding .3rem
+	
+h2:before
+	content ""
+	display block
+	border-left solid 10px #ff6b00
+	height 100%
+	width 30%
+	position absolute
+	left 50%
+	top 0
+	bottom 0
+	z-index: -1
 
 .black 
 	background-color black
@@ -33,14 +45,18 @@ h2
 	width 87%
 	height 7rem
 	margin 0.5rem
-	
-.submit 
-	border-style none 
+
+.bcontainer
+	display flex
+	flex-flow row wrap
+	justify-content space-around
+.submit, button 
+	border-style none
 	color white
-	margin 0
+	font-size 1.5rem
 	padding 5px
 	background linear-gradient(to bottom right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(42,42,47,1) 51%,rgba(42,42,47,1) 100%)
-	width 30%
+	text-align center
 	
 @media screen and (min-width: 600px)
 	.wrapper 
@@ -51,6 +67,8 @@ h2
 		font-size 4.5rem
 	.boldTitle
 		font-size 4.7rem
+	.submit, button
+		font-size 2rem
 		
 @media screen and (min-width: 768px)
 	.wrapper
@@ -61,6 +79,8 @@ h2
 		font-size 6rem
 	.boldTitle
 		font-size 6.2rem
+	.submit, button
+		font-size 2.5rem
 
 @media screen and (min-width: 1024px)
 	.wrapper
@@ -71,6 +91,8 @@ h2
 		font-size 7rem
 	.boldTitle
 		font-size 7.2rem
+	.submit, button
+		font-size 3rem
 		
 /* Mailchimp Form*/
 .formWrap
@@ -84,7 +106,7 @@ input
 	padding 5px
 	background linear-gradient(to bottom right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(42,42,47,1) 51%,rgba(42,42,47,1) 100%)
 	width 30%
-.button:hover
+.button:hover, button:hover
 	background linear-gradient(to bottom right, rgba(255,107,0,1) 0%,rgba(255,107,0,1) 50%,rgba(255,137,51,1) 51%,rgba(255,137,51,1) 100%)
 .mc-field-group
 	display inline-block

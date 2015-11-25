@@ -20,6 +20,18 @@ h2 {
   margin: 0;
   padding: 0.3rem;
 }
+h2:before {
+  content: "";
+  display: block;
+  border-left: solid 10px #ff6b00;
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .black {
   background-color: #000;
 }
@@ -44,17 +56,41 @@ h2 {
   height: 7rem;
   margin: 0.5rem;
 }
-.submit {
+.bcontainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.submit,
+button {
   border-style: none;
   color: #fff;
-  margin: 0;
+  font-size: 1.5rem;
   padding: 5px;
   background: -webkit-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
   background: -moz-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
   background: -o-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
   background: -ms-linear-gradient(top left, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
   background: linear-gradient(to bottom right, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
-  width: 30%;
+  text-align: center;
 }
 @media screen and (min-width: 600px) {
   .wrapper {
@@ -68,6 +104,10 @@ h2 {
   }
   .boldTitle {
     font-size: 4.7rem;
+  }
+  .submit,
+  button {
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -83,6 +123,10 @@ h2 {
   .boldTitle {
     font-size: 6.2rem;
   }
+  .submit,
+  button {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .wrapper {
@@ -96,6 +140,10 @@ h2 {
   }
   .boldTitle {
     font-size: 7.2rem;
+  }
+  .submit,
+  button {
+    font-size: 3rem;
   }
 }
 .formWrap {
@@ -116,7 +164,8 @@ input {
   background: linear-gradient(to bottom right, #000 0%, #000 50%, #2a2a2f 51%, #2a2a2f 100%);
   width: 30%;
 }
-.button:hover {
+.button:hover,
+button:hover {
   background: -webkit-linear-gradient(top left, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
   background: -moz-linear-gradient(top left, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
   background: -o-linear-gradient(top left, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
