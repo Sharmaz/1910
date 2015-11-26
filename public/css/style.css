@@ -6,6 +6,91 @@
   font-family: titlefont;
   src: url("../fonts/basictitlefont.ttf");
 }
+.imagen {
+  width: 100%;
+  margin: 0;
+  padding-top: 20%;
+}
+.logos {
+  width: 82.5%;
+  margin: 0 10%;
+}
+.imagen:before {
+  content: "";
+  display: block;
+  border-left: solid 10px #ff6b00;
+  height: 9.8%;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.zigzag1 {
+  border: 10px solid #ff6b00;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transform: matrix(1, -0.6, 0, 1, 0, 0);
+  -moz-transform: matrix(1, -0.6, 0, 1, 0, 0);
+  -o-transform: matrix(1, -0.6, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.6, 0, 1, 0, 0);
+  transform: matrix(1, -0.6, 0, 1, 0, 0);
+  position: absolute;
+  height: 6%;
+  width: 18%;
+  top: 11.5%;
+  left: 32%;
+  z-index: -1;
+}
+.zigzag2 {
+  border: 10px solid #ff6b00;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transform: matrix(1, -0.6, 0, 1, 0, 0);
+  -moz-transform: matrix(1, -0.6, 0, 1, 0, 0);
+  -o-transform: matrix(1, -0.6, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.6, 0, 1, 0, 0);
+  transform: matrix(1, -0.6, 0, 1, 0, 0);
+  position: absolute;
+  height: 6.5%;
+  width: 14%;
+  top: 23.5%;
+  left: 17.9%;
+  z-index: -2;
+}
+.zigzag3 {
+  border-top: 5px solid #ff6b00;
+  border-left: 10px solid #ff6b00;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transform: matrix(1, -0.6, 1.5, 1, 0, 0);
+  -moz-transform: matrix(1, -0.6, 1.5, 1, 0, 0);
+  -o-transform: matrix(1, -0.6, 1.5, 1, 0, 0);
+  -ms-transform: matrix(1, -0.6, 1.5, 1, 0, 0);
+  transform: matrix(1, -0.6, 1.5, 1, 0, 0);
+  position: absolute;
+  height: 6%;
+  width: 14%;
+  top: 35%;
+  left: 11.6%;
+  z-index: -3;
+}
+@media screen and (min-width: 600px) {
+  .logos {
+    width: 81.5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logos {
+    width: 81%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logos {
+    width: 80.5%;
+  }
+}
 .wrapper {
   padding-top: 25%;
   padding-bottom: 5%;
