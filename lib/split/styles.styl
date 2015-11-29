@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?1qw6ay');
+	src:url('../fonts/icomoon.eot?1qw6ay#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?1qw6ay') format('truetype'),
+		url('../fonts/icomoon.woff?1qw6ay') format('woff'),
+		url('../fonts/icomoon.svg?1qw6ay#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+	content: "\e900";
+	padding-left .5rem
+}
+.icon-twitter:before {
+	content: "\ea91";
+}
+.icon-vimeo:before {
+	content: "\ea9c";
+}
+
+.Menu
+	background-color #ff6b00
+	text-align center
+	&-list
+		margin 0
+		padding 0
+	&-element
+		display inline-block
+		color white
+		margin 1rem
+		padding 0
+	&-element a
+		color white
+		text-decoration none
+	/*&-element:before
+		content "-"
+		color #BF5000
+		margin-right .5rem
+	&-element:after
+		content "-"
+		color #BF5000
+		margin-left .5rem*/
+.Content
+	display flex
+	flex-wrap wrap
+	flex-direction row
+	justify-content space-around
+	width 100%
+	&-left
+		width 100%
+	&-right
+		width 100%
+.frase
+	background-color black
+	color white
+	padding 1rem
+	margin 10%
+video
+	margin 10%
+	width 80%
+@media screen and (min-width: 768px)
+	.Content
+		&-left
+			width 45%
+		&-right
+			width 45%
+	.frase
+		margin 20% 0
+	video
+		width 90%
+		margin 10% 5% 5% 5%
+.Social
+	padding 0
+	margin 0 5% 0 0
+	text-align right
+.Social-icons
+	background linear-gradient(to bottom right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(42,42,47,1) 51%,rgba(42,42,47,1) 100%)
+	display inline-block
+	font-family icomoon
+	font-size 1.5rem
+	text-align center
+	vertical-align bottom
+	margin 0 5% 10% 0
+	padding 1rem 0rem
+.Social-icons a
+	color white
+	text-decoration none
+	padding 1rem
+.Social-icons a:hover
+	background linear-gradient(to bottom right, rgba(255,107,0,1) 0%,rgba(255,107,0,1) 50%,rgba(255,137,51,1) 51%,rgba(255,137,51,1) 100%)
+@media screen and (min-width: 768px)
+	.Social
+		margin 0
+		
