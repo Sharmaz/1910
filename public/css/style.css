@@ -26,6 +26,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.Content-text {
+  margin: 1rem;
+}
+.logo {
+  width: 50%;
+  margin: 1rem 25%;
+}
 .imagen {
   width: 100%;
   margin: 0;
