@@ -66,6 +66,22 @@ figure {
     margin: 0 20%;
   }
 }
+.action {
+  margin-top: 2rem;
+}
+.textarea,
+.text {
+  border: solid 0.5rem #ff6b00;
+}
+@media screen and (min-width: 600px) {
+  .text {
+    background-color: #f2f2f2;
+    width: 45%;
+  }
+  .submit {
+    width: 10%;
+  }
+}
 .Posters {
   display: -webkit-box;
   display: -moz-box;
@@ -173,15 +189,16 @@ h2:before {
 }
 .action {
   text-align: center;
+  width: 90%;
 }
 .text {
   background-color: #f2f2f2;
-  width: 40%;
+  width: 90%;
   margin: 0.5rem;
 }
 .textarea {
   background-color: #f2f2f2;
-  width: 87%;
+  width: 90%;
   height: 7rem;
   margin: 0.5rem;
 }
@@ -195,12 +212,15 @@ h2:before {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-lines: multiple;
   -moz-box-lines: multiple;
   -o-box-lines: multiple;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: distribute;
   -moz-box-pack: distribute;
   -o-box-pack: distribute;
@@ -234,10 +254,6 @@ button {
   .boldTitle {
     font-size: 4.7rem;
   }
-  .submit,
-  button {
-    font-size: 2rem;
-  }
 }
 @media screen and (min-width: 768px) {
   .wrapper {
@@ -252,10 +268,6 @@ button {
   .boldTitle {
     font-size: 6.2rem;
   }
-  .submit,
-  button {
-    font-size: 2.5rem;
-  }
 }
 @media screen and (min-width: 1024px) {
   .wrapper {
@@ -269,10 +281,6 @@ button {
   }
   .boldTitle {
     font-size: 7.2rem;
-  }
-  .submit,
-  button {
-    font-size: 3rem;
   }
 }
 .formWrap {
