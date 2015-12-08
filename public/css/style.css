@@ -298,9 +298,9 @@ h2 {
 .Menu {
   background-color: #ff6b00;
   text-align: center;
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  left: 0;
   width: 100%;
 /*&-element:before
 		content "-"
@@ -324,6 +324,14 @@ h2 {
 .Menu-element a {
   color: #fff;
   text-decoration: none;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
 }
 .icon-facebook2:before {
   content: "\e900";

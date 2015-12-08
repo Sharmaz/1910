@@ -1,9 +1,9 @@
 .Menu
 	background-color #ff6b00
 	text-align center
-	position fixed
+	position sticky
+	position: -webkit-sticky;
 	top 0
-	left 0
 	width 100%
 	&-list
 		margin 0
@@ -24,3 +24,10 @@
 		content "-"
 		color #BF5000
 		margin-left .5rem*/
+.sticky 
+	position fixed
+	width 100%
+	left 0
+	top 0
+	z-index 100
+	border-top 0
