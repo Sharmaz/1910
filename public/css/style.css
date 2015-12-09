@@ -251,6 +251,7 @@ h2 {
   -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+  margin-bottom: 1.2rem;
 }
 @media screen and (min-width: 600px) {
   .wrapper {
