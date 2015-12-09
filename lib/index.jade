@@ -7,14 +7,13 @@ head
 	link(rel="stylesheet", href="css/style.css")
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
 	script(src="/jquery-scrolltofixed.js")
-	script $(document).ready(function() { $('.Menu').scrollToFixed(); });
 	title 1910 Studios
 body
 	include ./language/template.jade
-	include ./branches/template.jade
-	include ./split/template.jade
-	include ./games/template.jade
-	include ./about/template.jade
-	include ./contact/template.jade
+	//- include ./branches/template.jade
+	//- include ./split/template.jade
+	//- include ./games/template.jade
+	//- include ./about/template.jade
+	//- include ./contact/template.jade
 	
 	script(src="/app.js")

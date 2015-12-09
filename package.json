@@ -4,6 +4,7 @@
   },
   "scripts": {
     "jade": "jade --watch --pretty lib/index.jade --out public",
+    "jades": "jade --pretty lib/*/template.jade",
     "stylus": "stylus --use nib --watch lib/style.styl --out public/css"
   }
 }
