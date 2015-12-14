@@ -26,6 +26,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#about {
+  padding-top: 5rem;
+}
 .Content-text {
   margin: 1rem;
 }
@@ -67,7 +70,10 @@ figure {
   }
 }
 .action {
-  margin-top: 2rem;
+  margin: 2rem 0;
+}
+#contact {
+  padding-top: 5rem;
 }
 .textarea,
 .text {
@@ -81,6 +87,9 @@ figure {
   .submit {
     width: 10%;
   }
+}
+#games {
+  padding-top: 5rem;
 }
 .Posters {
   display: -webkit-box;
