@@ -3,7 +3,7 @@
     "nib": "^1.1.0"
   },
   "scripts": {
-    "jade": "jade --watch --pretty lib/index.jade --out public",
+    "jade": "jade --watch --pretty lib/rocket.jade --out public",
     "jades": "jade --pretty lib/branches/template.jade --out public/en",
     "stylus": "stylus --use nib --watch lib/style.styl --out public/css"
   }
