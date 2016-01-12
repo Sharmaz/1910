@@ -137,8 +137,10 @@ figure {
   text-align: center;
 }
 .Poster-image {
-  height: 200px;
-  width: 100px;
+  width: 100%;
+}
+.Poster-gameImage {
+  width: 100%;
 }
 .Poster-description {
   width: 170px;
@@ -342,6 +344,9 @@ h2 {
   top: 0;
   z-index: 100;
   border-top: 0;
+}
+.Body {
+  background: #0f1228;
 }
 .icon-facebook2:before {
   content: "\e900";

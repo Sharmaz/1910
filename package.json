@@ -3,8 +3,9 @@
     "nib": "^1.1.0"
   },
   "scripts": {
-    "jade": "jade --watch --pretty lib/rocket.jade --out public",
-    "jades": "jade --pretty lib/branches/template.jade --out public/en",
-    "stylus": "stylus --use nib --watch lib/style.styl --out public/css"
+    "jade": "jade --watch --pretty lib/en/rocket.jade --out public",
+    "jaden": "jade --watch --pretty lib/en/branches/template.jade --out public/en",
+    "jades": "jade --watch --pretty lib/es/branches/template.jade --out public/es",
+    "stylus": "stylus --use nib --watch lib/en/style.styl --out public/css"
   }
 }

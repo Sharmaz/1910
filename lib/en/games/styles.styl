@@ -1,0 +1,39 @@
+#games
+	padding-top 5rem
+.Posters
+	display flex
+	flex-direction row
+	justify-content space-around
+	flex-wrap wrap
+.Poster
+	width 170px
+	background-color black
+	border-radius 0 0 .5rem .5rem
+	margin 1rem
+	padding 0
+	&-name
+		background linear-gradient(to bottom right, rgba(255,107,0,1) 0%,rgba(255,107,0,1) 50%,rgba(255,137,51,1) 51%,rgba(255,137,51,1) 100%)
+		color white 
+		margin 0
+		padding 0
+		text-align center
+	&-image
+		width 100%
+	&-gameImage
+		width 100%
+	&-description
+		width 170px
+		margin 2rem 1rem
+@media screen and (min-width: 1024px)
+	.Poster-description
+		color white
+	// .blackbar:after
+	// 	content ""
+	// 	height 30%
+	// 	width 100%
+	// 	background-color black
+	// 	display block
+	// 	position absolute
+	// 	left 0
+	// 	top 19rem
+	// 	z-index -1
