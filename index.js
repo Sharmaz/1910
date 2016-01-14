@@ -13,11 +13,16 @@ const port = process.env.PORT || 8080
 server = web.listen(port, onListening())
 
 web.use('/static', express.static('static'))
-web.use('/en', express.static('/public/en/template.html'))
-
 web.get('/', function(req, res) {
 	res.sendFile(__dirname + '/public/index.html')
 })
+web.get('/en/template.html', function(req, res) {
+	res.sendFile(__dirname + '/public/en/template.html')
+})
+web.get('/es/template.html', function(req, res) {
+	res.sendFile(__dirname + '/public/es/template.html')
+})
+
 
 function onListening() {
 	console.log(`Servidor escuchando en el puerto: ${port}`)
