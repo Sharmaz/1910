@@ -1,9 +1,11 @@
 {
   "dependencies": {
+    "express": "^4.13.3",
     "nib": "^1.1.0"
   },
   "scripts": {
-    "jade": "jade --watch --pretty lib/en/rocket.jade --out public",
+    "jade": "jade --watch --pretty lib/index.jade --out public",
+    "jader": "jade --watch --pretty lib/en/rocket.jade --out public",
     "jaden": "jade --watch --pretty lib/en/branches/template.jade --out public/en",
     "jades": "jade --watch --pretty lib/es/branches/template.jade --out public/es",
     "stylus": "stylus --use nib --watch lib/en/style.styl --out public/css"
