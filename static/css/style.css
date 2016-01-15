@@ -348,6 +348,53 @@ h2 {
 .Rocket {
   background: #0f1228;
 }
+.Title {
+  margin: 0 15%;
+  margin-top: 10%;
+  width: 70%;
+}
+.Logo-img {
+  width: 100%;
+}
+.About {
+  color: #fff;
+}
+.About-list {
+  list-style-type: none;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.About-downloads {
+  margin: 0;
+}
+.About-price {
+  background: #d6dc3b;
+  color: #000;
+  margin: 10%;
+  width: 80%;
+}
+.About-price-title,
+.About-price-description {
+  margin: 1rem;
+}
+.GooglePlay,
+.AppStore {
+  width: 40%;
+  margin: 5%;
+}
+.Description {
+  background: #fff;
+  width: 100%;
+}
+.Description-features {
+  background: #d6dc3b;
+  margin: 10%;
+  width: 80%;
+}
+.Description-list {
+  list-style-type: none;
+  margin: 1rem;
+}
 .icon-facebook2:before {
   content: "\e900";
   padding-left: 0.5rem;
