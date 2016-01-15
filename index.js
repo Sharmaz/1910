@@ -13,8 +13,12 @@ const port = process.env.PORT || 8080
 server = web.listen(port, onListening())
 
 web.use('/static', express.static('static'))
+
 web.get('/', function(req, res) {
 	res.sendFile(__dirname + '/public/index.html')
+})
+web.get('/rocket-willie', function(req, res) {
+	res.sendFile(__dirname + '/public/rocket.html')
 })
 web.get('/en/template.html', function(req, res) {
 	res.sendFile(__dirname + '/public/en/template.html')
