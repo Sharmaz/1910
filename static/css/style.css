@@ -347,14 +347,23 @@ h2 {
 }
 .Rocket {
   background: #0f1228;
+  margin: 0;
+  padding: 0;
 }
 .Title {
+  background: url("../images/stars.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.Logo {
   margin: 0 15%;
-  margin-top: 10%;
   width: 70%;
-  background-image: url("../images/stars.png");
 }
 .Logo-img {
+  margin: 10% 0;
   width: 100%;
 }
 .About {
@@ -383,8 +392,28 @@ h2 {
   width: 40%;
   margin: 5%;
 }
+.Subtitle-R1 {
+  background: #0f1228;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+  width: 60%;
+}
+.Subtitle-R1:before {
+  background-image: url("../images/star-title.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  width: 100%;
+  padding-left: 2.5rem;
+  margin: 0 1rem;
+  content: "";
+  font-size: 1.5rem;
+}
 .Description {
   background: #fff;
+  padding-top: 1rem;
   width: 100%;
 }
 .Description-features {
@@ -395,6 +424,27 @@ h2 {
 .Description-list {
   list-style-type: none;
   margin: 1rem;
+}
+.Description-subtitle {
+  padding: 0.5rem 0;
+}
+.Description-about {
+  margin: 1rem;
+}
+.GameShots {
+  width: 100%;
+}
+.GameShots-image {
+  width: 80%;
+  margin: 0.5rem 10%;
+}
+.GameShots-imageSpecial {
+  width: 90%;
+  margin: 0.5rem 5%;
+}
+.download img {
+  width: 16%;
+  margin: 0 42%;
 }
 .icon-facebook2:before {
   content: "\e900";

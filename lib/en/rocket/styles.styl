@@ -1,11 +1,17 @@
 .Rocket
 	background #0F1228
+	margin 0
+	padding 0
 .Title
+	background url("../images/stars.png")
+	background-size cover
+	margin 0
+	padding 0
+.Logo
 	margin 0 15%
-	margin-top 10%
 	width 70%
-	background-image url("../images/stars.png")
 .Logo-img
+	margin 10% 0
 	width 100%
 
 .About
@@ -28,8 +34,24 @@
 	width 40%
 	margin 5%
 
+.Subtitle-R1
+	background #0F1228
+	color white
+	font-size 1.5rem
+	margin 0
+	width 60%
+.Subtitle-R1:before
+	background-image url("../images/star-title.png")
+	background-repeat no-repeat
+	background-size 100%
+	width 100%
+	padding-left 2.5rem
+	margin 0 1rem
+	content ""
+	font-size 1.5rem
 .Description
 	background white
+	padding-top 1rem
 	width 100%
 	&-features
 		background #D6DC3B
@@ -38,3 +60,19 @@
 	&-list
 		list-style-type none
 		margin 1rem
+	&-subtitle
+		padding .5rem 0
+	&-about
+		margin 1rem
+.GameShots
+	width 100%
+	&-image
+		width 80%
+		margin .5rem 10%
+	&-imageSpecial
+		width 90%
+		margin .5rem 5%
+.download img
+	width 16%
+	margin 0 42%
+
