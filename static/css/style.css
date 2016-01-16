@@ -411,6 +411,19 @@ h2 {
   content: "";
   font-size: 1.5rem;
 }
+.Subtitle-R2 {
+  background: #cfd65a;
+  -webkit-border-radius: 5px 5px;
+  border-radius: 5px 5px;
+  -webkit-box-shadow: -5px 0px #000, -5px 5px #000;
+  box-shadow: -5px 0px #000, -5px 5px #000;
+  height: 2rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin: 1rem 25%;
+  vertical-align: middle;
+  width: 50%;
+}
 .Description {
   background: #fff;
   padding-top: 1rem;
@@ -445,6 +458,85 @@ h2 {
 .download img {
   width: 16%;
   margin: 0 42%;
+}
+.Screenshots {
+  width: 100%;
+}
+.Screenshots-image {
+  width: 80%;
+  margin: 0.5rem 10%;
+}
+.ConceptArt {
+  background: #56bbae;
+  margin: 1rem 0;
+}
+.ConceptArt-image {
+  width: 80%;
+  margin: 1rem 10%;
+}
+.KeyArt {
+  background: #56bbae;
+  width: 100%;
+  margin: 1rem 0;
+}
+.KeyArt-subtitle {
+  margin-bottom: 1rem;
+}
+.KeyArt-image {
+  width: 80%;
+  margin: 0.5rem 10%;
+}
+.LogosIcon {
+  width: 100%;
+}
+.LogosIcon-image {
+  width: 40%;
+  margin: 0.5rem 5%;
+}
+.Music {
+  width: 100%;
+}
+.Music-image {
+  width: 80%;
+  margin: 0.5rem 10%;
+}
+.Characters {
+  background: url("../images/stars.png");
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+.Characters-image {
+  width: 40%;
+  margin: 0.5rem 5%;
+}
+.Credits {
+  background: url("../images/star-dust.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Credits-names {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 1rem 0;
+}
+.Credits-jump {
+  margin: 1rem 0 0 0;
+}
+.foot {
+  background: url("../images/star-decoration.png");
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 70%;
+  margin: 0 15%;
+  height: 5rem;
 }
 .icon-facebook2:before {
   content: "\e900";
