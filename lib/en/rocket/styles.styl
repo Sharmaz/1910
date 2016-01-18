@@ -16,12 +16,15 @@
 
 .About
 	color white
+	width 100%
 	&-list
 		list-style-type none
-		margin 1rem
+		margin 0
+		padding 0
 		font-size 1.2rem
 	&-downloads
 		margin 0
+		padding 0
 	&-price
 		background #D6DC3B
 		color black
@@ -29,6 +32,24 @@
 		width 80%
 		&-title, &-description
 			margin 1rem
+@media screen and (min-width: 768px)
+	.About
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		justify-content space-around
+		padding 0 0 1rem 0
+		margin 0
+		&-download 
+			width 40%
+			margin 0
+			padding 0
+		&-downloads
+			width 80%
+		&-price
+			width 40%
+			margin 0
+			padding 0
 
 .GooglePlay, .AppStore
 	width 40%
@@ -49,6 +70,9 @@
 	margin 0 1rem
 	content ""
 	font-size 1.5rem
+@media screen and (min-width: 768px)
+	.Subtitle-R1
+		width 40%
 .Subtitle-R2
 	background #CFD65A
 	border-radius 5px 5px
@@ -59,6 +83,10 @@
 	margin 1rem 25%
 	vertical-align middle
 	width 50%
+@media screen and (min-width: 768px)
+	.Subtitle-R2
+		width 20%
+		margin 1rem 40%
 .Description
 	background white
 	padding-top 1rem
@@ -74,6 +102,26 @@
 		padding .5rem 0
 	&-about
 		margin 1rem
+@media screen and (min-width: 768px)
+	.Description-wrap
+		display flex
+		flex-wrap wrap
+		flex-direction row
+		justify-content space-between
+	.Description-subtitle
+		width 40%
+		margin 0
+		padding 0
+	.Description-subtitle .Subtitle-R1
+		width 100%
+	.Description-about
+		width 58%
+		padding 0
+		margin 0
+	.Description-logo
+		width 80%
+		margin 0 10%
+
 .GameShots
 	width 100%
 	&-image

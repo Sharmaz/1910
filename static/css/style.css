@@ -368,14 +368,17 @@ h2 {
 }
 .About {
   color: #fff;
+  width: 100%;
 }
 .About-list {
   list-style-type: none;
-  margin: 1rem;
+  margin: 0;
+  padding: 0;
   font-size: 1.2rem;
 }
 .About-downloads {
   margin: 0;
+  padding: 0;
 }
 .About-price {
   background: #d6dc3b;
@@ -386,6 +389,49 @@ h2 {
 .About-price-title,
 .About-price-description {
   margin: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .About {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    -o-box-pack: distribute;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    padding: 0 0 1rem 0;
+    margin: 0;
+  }
+  .About-download {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+  .About-downloads {
+    width: 80%;
+  }
+  .About-price {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
 }
 .GooglePlay,
 .AppStore {
@@ -411,6 +457,11 @@ h2 {
   content: "";
   font-size: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .Subtitle-R1 {
+    width: 40%;
+  }
+}
 .Subtitle-R2 {
   background: #cfd65a;
   -webkit-border-radius: 5px 5px;
@@ -423,6 +474,12 @@ h2 {
   margin: 1rem 25%;
   vertical-align: middle;
   width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .Subtitle-R2 {
+    width: 20%;
+    margin: 1rem 40%;
+  }
 }
 .Description {
   background: #fff;
@@ -443,6 +500,51 @@ h2 {
 }
 .Description-about {
   margin: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .Description-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .Description-subtitle {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+  .Description-subtitle .Subtitle-R1 {
+    width: 100%;
+  }
+  .Description-about {
+    width: 58%;
+    padding: 0;
+    margin: 0;
+  }
+  .Description-logo {
+    width: 80%;
+    margin: 0 10%;
+  }
 }
 .GameShots {
   width: 100%;
