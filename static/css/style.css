@@ -449,7 +449,7 @@ h2 {
   color: #fff;
   font-size: 1.5rem;
   margin: 0;
-  width: 60%;
+  width: 70%;
 }
 .Subtitle-R1:before {
   background-image: url("../images/star-title.png");
@@ -494,18 +494,26 @@ h2 {
 }
 .Description-features {
   background: #d6dc3b;
-  margin: 10%;
-  width: 80%;
+  margin: 1rem;
 }
 .Description-list {
   list-style-type: none;
-  margin: 1rem;
+  margin: 0 10%;
+  padding: 0;
+  width: 80%;
+  font-weight: bold;
 }
 .Description-subtitle {
   padding: 0.5rem 0;
 }
 .Description-about {
   margin: 1rem;
+}
+.Description-logo {
+  display: none;
+}
+.Description-decorationImage {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .Description-wrap {
@@ -548,6 +556,7 @@ h2 {
     margin: 0;
   }
   .Description-logo {
+    display: block;
     width: 80%;
     margin: 0 10%;
   }
@@ -581,6 +590,7 @@ h2 {
     width: 40%;
   }
   .Description-decorationImage {
+    display: block;
     width: 80%;
     margin-left: 70%;
   }
@@ -662,7 +672,7 @@ h2 {
 .KeyArt {
   background: #56bbae;
   width: 100%;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .KeyArt-subtitle {
   margin-bottom: 1rem;
@@ -672,7 +682,7 @@ h2 {
   margin: 0.5rem 10%;
 }
 .KeyArt-imageSpecial {
-  width: 90;
+  width: 90%;
   margin: 0.5rem 5%;
 }
 @media screen and (min-width: 768px) {
@@ -700,6 +710,8 @@ h2 {
 }
 .Music {
   width: 100%;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
 }
 .Music-image {
   width: 80%;
@@ -747,6 +759,24 @@ h2 {
 .Credits-jump {
   margin: 1rem 0 0 0;
 }
+@media screen and (min-width: 768px) {
+  .Credits {
+    font-size: 1.2rem;
+  }
+  .Credits-especial {
+    width: 20%;
+    margin: 1rem 40%;
+  }
+  .enlinea {
+    display: inline-block;
+    width: 40%;
+    margin: 1rem;
+  }
+}
+.Plus {
+  color: #b32471;
+  font-weight: bold;
+}
 .foot {
   background: url("../images/star-decoration.png");
   -webkit-background-size: 100%;
@@ -756,6 +786,12 @@ h2 {
   width: 70%;
   margin: 0 15%;
   height: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .foot {
+    width: 30%;
+    margin: 0 35%;
+  }
 }
 .icon-facebook2:before {
   content: "\e900";

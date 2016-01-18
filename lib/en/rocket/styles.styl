@@ -63,7 +63,7 @@
 	color white
 	font-size 1.5rem
 	margin 0
-	width 60%
+	width 70%
 .Subtitle-R1:before
 	background-image url("../images/star-title.png")
 	background-repeat no-repeat
@@ -96,15 +96,21 @@
 	width 100%
 	&-features
 		background #D6DC3B
-		margin 10%
-		width 80%
+		margin 1rem
 	&-list
 		list-style-type none
-		margin 1rem
+		margin 0 10%
+		padding 0
+		width 80%
+		font-weight bold
 	&-subtitle
 		padding .5rem 0
 	&-about
 		margin 1rem
+	&-logo
+		display none
+	&-decorationImage
+		display none
 @media screen and (min-width: 768px)
 	.Description-wrap
 		display flex
@@ -122,6 +128,7 @@
 		padding 0
 		margin 0
 	.Description-logo
+		display block
 		width 80%
 		margin 0 10%
 	.Description-wrap2
@@ -132,6 +139,7 @@
 	.Description-decoration
 		width 40%
 	.Description-decorationImage
+		display block
 		width 80%
 		margin-left 70%
 	.Description-features
@@ -191,14 +199,14 @@
 .KeyArt
 	background #56BBAE
 	width 100%
-	margin 1rem 0
+	margin 2rem 0
 	&-subtitle
 		margin-bottom 1rem
 	&-image
 		width 80%
 		margin .5rem 10%
 	&-imageSpecial
-		width 90
+		width 90%
 		margin .5rem 5%
 @media screen and (min-width: 768px)
 	.KeyArt-image
@@ -218,6 +226,8 @@
 		margin 1rem 2.5%
 .Music
 	width 100%
+	margin 2rem 0
+	padding-bottom 2rem
 	&-image
 		width 80%
 		margin .5rem 10%
@@ -250,6 +260,19 @@
 		padding 1rem 0
 	&-jump
 		margin 1rem 0 0 0
+@media screen and (min-width: 768px)
+	.Credits
+		font-size 1.2rem
+		&-especial
+			width 20%
+			margin 1rem 40%
+	.enlinea
+		display inline-block
+		width 40%
+		margin 1rem
+.Plus
+	color #B32471
+	font-weight bold
 .foot
 	background url("../images/star-decoration.png")
 	background-size 100%
@@ -257,3 +280,7 @@
 	width 70%
 	margin 0 15%
 	height 5rem
+@media screen and (min-width: 768px)
+	.foot
+		width 30%
+		margin 0 35%
