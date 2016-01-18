@@ -366,6 +366,12 @@ h2 {
   margin: 10% 0;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .Logo-img {
+    width: 70%;
+    margin: 10% 15%;
+  }
+}
 .About {
   color: #fff;
   width: 100%;
@@ -610,12 +616,12 @@ h2 {
   }
   .Broke-decoration {
     background: url("../images/star-decoration2.png");
-    -webkit-background-size: 300px 86px;
-    -moz-background-size: 300px 86px;
-    background-size: 300px 86px;
+    -webkit-background-size: 400px 114px;
+    -moz-background-size: 400px 114px;
+    background-size: 400px 114px;
     background-repeat: no-repeat;
     width: 100%;
-    height: 5rem;
+    height: 7rem;
     margin: 1rem 25%;
   }
 }
@@ -623,12 +629,27 @@ h2 {
   width: 16%;
   margin: 0 42%;
 }
+@media screen and (min-width: 768px) {
+  .download img {
+    width: 10%;
+    margin: 0 80%;
+  }
+}
 .Screenshots {
   width: 100%;
+}
+.Screenshots-subtitle {
+  margin-bottom: 2rem;
 }
 .Screenshots-image {
   width: 80%;
   margin: 0.5rem 10%;
+}
+@media screen and (min-width: 768px) {
+  .Screenshots-image {
+    width: 40%;
+    margin: 1rem 5%;
+  }
 }
 .ConceptArt {
   background: #56bbae;
@@ -650,12 +671,32 @@ h2 {
   width: 80%;
   margin: 0.5rem 10%;
 }
+.KeyArt-imageSpecial {
+  width: 90;
+  margin: 0.5rem 5%;
+}
+@media screen and (min-width: 768px) {
+  .KeyArt-image {
+    width: 40%;
+    margin: 1rem 5%;
+  }
+  .KeyArt-imageSpecial {
+    width: 80%;
+    margin: 1rem 10%;
+  }
+}
 .LogosIcon {
   width: 100%;
 }
 .LogosIcon-image {
   width: 40%;
   margin: 0.5rem 5%;
+}
+@media screen and (min-width: 768px) {
+  .LogosIcon-image {
+    width: 20%;
+    margin: 1rem 2.5%;
+  }
 }
 .Music {
   width: 100%;
@@ -674,6 +715,20 @@ h2 {
 .Characters-image {
   width: 40%;
   margin: 0.5rem 5%;
+}
+.Characters-imageSpecial {
+  width: 40%;
+  margin: 0.5rem 5%;
+}
+@media screen and (min-width: 768px) {
+  .Characters-image {
+    width: 25%;
+    margin: 0 4%;
+  }
+  .Characters-imageSpecial {
+    width: 25%;
+    margin: 0 37.5%;
+  }
 }
 .Credits {
   background: url("../images/star-dust.png");

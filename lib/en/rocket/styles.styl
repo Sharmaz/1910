@@ -13,7 +13,10 @@
 .Logo-img
 	margin 10% 0
 	width 100%
-
+@media screen and (min-width: 768px)
+	.Logo-img
+		width 70%
+		margin 10% 15%
 .About
 	color white
 	width 100%
@@ -156,19 +159,29 @@
 		margin 1rem 10%
 	.Broke-decoration
 		background url("../images/star-decoration2.png")
-		background-size 300px 86px
+		background-size 400px 114px
 		background-repeat no-repeat
 		width 100%
-		height 5rem
+		height 7rem
 		margin 1rem 25%
 .download img
 	width 16%
 	margin 0 42%
+@media screen and (min-width: 768px)
+	.download img
+		width 10%
+		margin 0 80%
 .Screenshots
 	width 100%
+	&-subtitle
+		margin-bottom 2rem
 	&-image
 		width 80%
 		margin .5rem 10%
+@media screen and (min-width: 768px)
+	.Screenshots-image
+		width 40%
+		margin 1rem 5%
 .ConceptArt
 	background #56BBAE
 	margin 1rem 0
@@ -184,11 +197,25 @@
 	&-image
 		width 80%
 		margin .5rem 10%
+	&-imageSpecial
+		width 90
+		margin .5rem 5%
+@media screen and (min-width: 768px)
+	.KeyArt-image
+		width 40%
+		margin 1rem 5%
+	.KeyArt-imageSpecial
+		width 80%
+		margin 1rem 10%
 .LogosIcon
 	width 100%
 	&-image
 		width 40%
 		margin .5rem 5%
+@media screen and (min-width: 768px)
+	.LogosIcon-image
+		width 20%
+		margin 1rem 2.5%
 .Music
 	width 100%
 	&-image
@@ -201,6 +228,16 @@
 	&-image
 		width 40%
 		margin .5rem 5%
+	&-imageSpecial
+		width 40%
+		margin .5rem 5%
+@media screen and (min-width: 768px)
+	.Characters-image
+		width 25%
+		margin 0 4%
+	.Characters-imageSpecial
+		width 25%
+		margin 0 37.5%
 .Credits
 	background url("../images/star-dust.png")
 	background-size cover
