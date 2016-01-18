@@ -371,6 +371,22 @@ h2 {
     width: 70%;
     margin: 10% 15%;
   }
+  .Title {
+    -webkit-background-size: 80% 80%;
+    -moz-background-size: 80% 80%;
+    background-size: 80% 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Title {
+    -webkit-background-size: 70% 70%;
+    -moz-background-size: 70% 70%;
+    background-size: 70% 70%;
+  }
+  .Logo-img {
+    width: 60%;
+    margin: 10% 20%;
+  }
 }
 .About {
   color: #fff;
@@ -381,10 +397,18 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 1.2rem;
+  margin: 0 10%;
+  width: 90%;
+}
+.About-download {
+  margin: 1rem 10%;
+  width: 80%;
 }
 .About-downloads {
   margin: 0;
   padding: 0;
+  width: 90%;
+  margin: 0 5%;
 }
 .About-price {
   background: #d6dc3b;
@@ -423,7 +447,7 @@ h2 {
     -webkit-justify-content: space-around;
     justify-content: space-around;
     padding: 0 0 1rem 0;
-    margin: 0;
+    margin: 1rem 0;
   }
   .About-download {
     width: 40%;
@@ -630,7 +654,7 @@ h2 {
     -moz-background-size: 400px 114px;
     background-size: 400px 114px;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 50%;
     height: 7rem;
     margin: 1rem 25%;
   }
@@ -642,7 +666,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .download img {
     width: 10%;
-    margin: 0 80%;
+    margin: 0 0 0 85%;
   }
 }
 .Screenshots {
