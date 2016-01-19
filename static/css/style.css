@@ -118,7 +118,7 @@ figure {
   flex-wrap: wrap;
 }
 .Poster {
-  width: 170px;
+  width: 70%;
   background-color: #000;
   -webkit-border-radius: 0 0 0.5rem 0.5rem;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -132,23 +132,30 @@ figure {
   background: -ms-linear-gradient(top left, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
   background: linear-gradient(to bottom right, #ff6b00 0%, #ff6b00 50%, #ff8933 51%, #ff8933 100%);
   color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 .Poster-image {
-  width: 100%;
+  width: 80%;
+  margin: 1rem 10%;
 }
 .Poster-gameImage {
   width: 100%;
 }
 .Poster-description {
-  width: 170px;
-  margin: 2rem 1rem;
+  width: 80%;
+  margin: 1rem 10%;
+  color: #fff;
 }
-@media screen and (min-width: 1024px) {
-  .Poster-description {
-    color: #fff;
+@media screen and (min-width: 768px) {
+  .Poster {
+    width: 35%;
+  }
+  .Poster-name {
+    font-size: 1.5rem;
   }
 }
 .action {

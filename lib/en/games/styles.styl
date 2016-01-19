@@ -6,7 +6,7 @@
 	justify-content space-around
 	flex-wrap wrap
 .Poster
-	width 170px
+	width 70%
 	background-color black
 	border-radius 0 0 .5rem .5rem
 	margin 1rem
@@ -14,26 +14,22 @@
 	&-name
 		background linear-gradient(to bottom right, rgba(255,107,0,1) 0%,rgba(255,107,0,1) 50%,rgba(255,137,51,1) 51%,rgba(255,137,51,1) 100%)
 		color white 
+		font-size 1.2rem
+		font-weight bold
 		margin 0
 		padding 0
 		text-align center
 	&-image
-		width 100%
+		width 80%
+		margin 1rem 10%
 	&-gameImage
 		width 100%
 	&-description
-		width 170px
-		margin 2rem 1rem
-@media screen and (min-width: 1024px)
-	.Poster-description
+		width 80%
+		margin 1rem 10%
 		color white
-	// .blackbar:after
-	// 	content ""
-	// 	height 30%
-	// 	width 100%
-	// 	background-color black
-	// 	display block
-	// 	position absolute
-	// 	left 0
-	// 	top 19rem
-	// 	z-index -1
+@media screen and (min-width: 768px)
+	.Poster
+		width 35%
+		&-name
+			font-size 1.5rem

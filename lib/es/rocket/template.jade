@@ -1,60 +1,126 @@
+- var Plus = '<span class="Plus"> + </span>';
 header.Title
-figure.Logo
-	img(src="/images/rocket-willie-logo.png")
-
-	img
-	img
+	figure.Logo
+		img.Logo-img(src="static/images/rocket-willie-logo.png")
+		img
+		img
 .About
-	p.About-download
-	p.About-price
+	.About-download 
+		.About-list
+			|Desarrollador: 1910Games!
+			br
+			|Fecha de lanzamiento: Octubre 2015.
+			br
+			|Plataformas: IOS/Android.
+		.About-downloads
+			a(href="#")
+				img.GooglePlay(src="static/images/google-play.png")
+			a(href="#")
+				img.AppStore(src="static/images/appstore.png")
+	.About-price
+		h3.About-price-title Precio:
+		.About-price-description Gratis (Compras dentro de la App)
+		h3.About-price-title Contacto:
+		.About-price-description contact@1910-studios.com
 .Description
-	img.Description-logo
-	p.Description-about
-	p.Description-features
-.GameShots
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-.Story
-	h2.Story-title
-	p.Story-description
-.Screenshots
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-.ConceptArt
-	img(src="", alt="")
-.KeyArt
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-.Logos-icon
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-.Music
-	img(src="", alt="")
+	.Description-wrap
+		.Description-subtitle
+			h3.Subtitle-R1 Descripción
+			img.Description-logo(src="static/images/rw-logo-icon04.png")
+		p.Description-about Rocket willie es un videojuego  para tablets y dispositivos touch, basado en las animaciones de los años 30s, en el cual  controlas a “willie” un pequeño cohete que desea atravesar el espacio, través de un modo de juego simple pero adictivo.
+	.Description-wrap2
+		.Description-decoration
+			img.Description-decorationImage(src="static/images/rw-decoration.png")
+		.Description-features
+			ul.Description-list
+				li Features
+				li Genero: Action/adventure
+				li Edad: 7-16
+				li Controles: Pantalla Tactil.
+	.Broke-decoration
+	.GameShots
+		img.GameShots-image(src="static/images/rw-feature01.png")
+		img.GameShots-image(src="static/images/rw-feature02.png")
+		img.GameShots-image(src="static/images/rw-feature03.png")
+		img.GameShots-image(src="static/images/rw-feature04.png")
+		img.GameShots-imageSpecial(src="static/images/rw-feature05.png")
+		.download
+			a(href="#")
+				img(src="static/images/download-icon.png")
+
+	.Screenshots
+		h3.Subtitle-R2.Screenshots-subtitle Capturas
+		img.Screenshots-image(src="static/images/rw-screenshot01.png")
+		img.Screenshots-image(src="static/images/rw-screenshot02.png")
+		img.Screenshots-image(src="static/images/rw-screenshot03.png")
+		img.Screenshots-image(src="static/images/rw-screenshot04.png")
+		img.Screenshots-image(src="static/images/rw-screenshot05.png")
+		img.Screenshots-image(src="static/images/rw-screenshot06.png")
+		.download
+			a(href="#")
+				img(src="static/images/download-icon.png")
+	.ConceptArt
+		h3.Subtitle-R1 Arte Conceptual
+		img.ConceptArt-image(src="static/images/rw-concept-art.png")
+		.download
+			a(href="#")
+				img(src="static/images/download-icon.png")
+	.KeyArt
+		h3.Subtitle-R1.KeyArt-subtitle Arte Clave
+		.KeyArt-images
+			.KeyArt-simple
+				img.KeyArt-image(src="static/images/rw-key-art01.png")
+				img.KeyArt-image(src="static/images/rw-key-art02.png")
+				img.KeyArt-image(src="static/images/rw-key-art03.png")
+				img.KeyArt-image(src="static/images/rw-key-art04.png")
+			.KeyArt-special
+				img.KeyArt-imageSpecial(src="static/images/rw-key-art05.png")
+		.download
+			a(href="#")
+				img(src="static/images/download-icon.png")
+	.LogosIcon
+		h3.Subtitle-R2 Iconos y Logos
+		img.LogosIcon-image(src="static/images/rw-logo-icon01.png")
+		img.LogosIcon-image(src="static/images/rw-logo-icon02.png")
+		img.LogosIcon-image(src="static/images/rw-logo-icon03.png")
+		img.LogosIcon-image(src="static/images/rw-logo-icon04.png")
+		img.LogosIcon-image(src="static/images/rw-logo-icon05.png")
+		img.LogosIcon-image(src="static/images/rw-logo-icon06.png")
+		img.LogosIcon-image(src="static/images/rw-logo-icon07.png")
+		img.LogosIcon-image(src="static/images/rw-logo-icon08.png")
+		.download
+			a(href="#")
+				img(src="static/images/download-icon.png")
+
+	.Music
+		h3.Subtitle-R2 Musica
+		img.Music-image(src="static/images/rw-music.png")
+		.download
+			a(href="#")
+				img(src="static/images/download-icon.png")
 .Characters
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
-	img(src="", alt="")
+	h3.Subtitle-R2 Personajes
+	.Characters-imageWrap
+		img.Characters-image(src="static/images/rw-character01.png")
+		img.Characters-image(src="static/images/rw-character02.png")
+		img.Characters-image(src="static/images/rw-character03.png")
+		img.Characters-image(src="static/images/rw-character04.png")
+		img.Characters-image(src="static/images/rw-character05.png")
+		img.Characters-image(src="static/images/rw-character06.png")
+		img.Characters-imageSpecial(src="static/images/rw-character07.png")
+	.download
+			a(href="#")
+				img(src="static/images/download-icon.png")
 .Credits
-	p.Credits-names
+	ul.Credits-names
+		li.Credits-jump.Credits-especial Game Design: Alejandro Ley
+		li.Credits-jump.enlinea Animation !{Plus} Character Design: Emmanuel Gomez
+		li.Credits-jump.enlinea Production !{Plus} Graphic Design: Yadira Mustanen
+		li.Credits-jump.enlinea Backgrounds !{Plus} Concept Art: Kamus (Eduardo Arellano)
+		li.Credits-jump Programing:
+		|Miguel Polanco
+		li.Credits-jump Music !{Plus} Sound Design:
+		|Soundscape Studio, Carlos Becerra !{Plus} Jorge Aguirre !{Plus} Oscar Rodriguez
 	img.logo
 	.Social
+	.foot
