@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "body-parser": "^1.14.2",
     "express": "^4.13.3",
-    "nib": "^1.1.0"
+    "nib": "^1.1.0",
+    "nodemailer": "^2.0.0",
+    "nodemailer-mailgun-transport": "git+https://github.com/orliesaurus/nodemailer-mailgun-transport.git"
   },
   "scripts": {
     "jade": "jade --watch --pretty lib/index.jade --out public",
