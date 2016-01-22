@@ -12,9 +12,11 @@ $(document).ready(function() {
      var ruta = ""
     if (lenguaje==es){
       ruta="es/template.html"
+      $('html')[0].lang = "es"
     }
     else {
       ruta = "en/template.html"
+      $('html')[0].lang = "en"
     }
     $('#branches').load(ruta)
     branch = $('#branches')

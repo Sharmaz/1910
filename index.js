@@ -13,6 +13,7 @@ const port = process.env.PORT || 8080
 server = web.listen(port, onListening())
 
 web.use('/static', express.static('static'))
+web.use('/files', express.static('files'))
 
 web.get('/', function(req, res) {
 	res.sendFile(__dirname + '/public/index.html')
