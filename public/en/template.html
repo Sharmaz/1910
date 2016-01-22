@@ -43,11 +43,11 @@
   </article>
 </section>
 <section id="contact" class="Content">
-  <form class="action">
-    <input type="text" placeholder="Name" required="required" class="text"/>
-    <input type="email" placeholder="Email" required="required" class="text"/>
-    <textarea placeholder="Message" class="textarea"></textarea>
-    <button class="submit">Send</button>
+  <form method="POST" action="/enviar" class="action">
+    <input type="text" id="name" name="nombre" placeholder="Name" required="required" class="text"/>
+    <input type="email" id="mail" name="mail" placeholder="Email" required="required" class="text"/>
+    <textarea type="textarea" id="message" name="mensaje" placeholder="Message" class="textarea"></textarea>
+    <input type="submit" id="enviar" name="enviar" class="submit"/>
   </form>
 </section>
 <script src="./static/js/app.js"></script>
