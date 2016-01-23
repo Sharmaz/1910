@@ -27,15 +27,50 @@
   -moz-osx-font-smoothing: grayscale;
 }
 #about {
-  padding-top: 2rem;
+  padding-top: 4rem;
+}
+.Content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  width: 100%;
 }
 .Content-text {
   margin: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .Content {
+    width: 45%;
+  }
 }
 .Util-title {
   color: #ff6b00;
   font-size: 2rem;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .logo {
   width: 50%;
@@ -75,26 +110,24 @@ figure {
   }
 }
 .action {
-  margin: 2rem 0;
+  margin: 0 0 1rem 0;
 }
 #contact {
-  padding-top: 2rem;
+  padding-top: 4rem;
+  vertical-align: top;
+  width: 100%;
 }
 .textarea,
 .text {
   border: solid 0.5rem #ff6b00;
 }
-@media screen and (min-width: 600px) {
-  .text {
-    background-color: #f2f2f2;
+@media screen and (min-width: 768px) {
+  #contact {
     width: 45%;
-  }
-  .submit {
-    width: 10%;
   }
 }
 #games {
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .Posters {
   display: -webkit-box;
@@ -154,6 +187,32 @@ figure {
   width: 80%;
   margin: 1rem 10%;
   color: #fff;
+}
+.AC-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .Poster {
@@ -280,9 +339,6 @@ h2 {
   .wrapper {
     margin-top: 20%;
   }
-  .text {
-    width: 41%;
-  }
   h2 {
     font-size: 4.5rem;
   }
@@ -293,9 +349,6 @@ h2 {
 @media screen and (min-width: 768px) {
   .wrapper {
     margin-top: 15%;
-  }
-  .text {
-    width: 42%;
   }
   h2 {
     font-size: 6rem;
@@ -308,9 +361,6 @@ h2 {
   .wrapper {
     margin-top: 8%;
     padding: 0;
-  }
-  .text {
-    width: 43%;
   }
   h2 {
     font-size: 7rem;
@@ -935,39 +985,6 @@ h2 {
 .icon-vimeo:before {
   content: "\ea9c";
 }
-.Content {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -o-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: distribute;
-  -moz-box-pack: distribute;
-  -o-box-pack: distribute;
-  -ms-flex-pack: distribute;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  width: 100%;
-}
-.Content-left {
-  width: 100%;
-}
-.Content-right {
-  width: 100%;
-}
 .frase {
   background-color: #000;
   color: #fff;
@@ -979,12 +996,6 @@ video {
   width: 80%;
 }
 @media screen and (min-width: 768px) {
-  .Content-left {
-    width: 45%;
-  }
-  .Content-right {
-    width: 45%;
-  }
   .frase {
     margin: 20% 0;
   }
