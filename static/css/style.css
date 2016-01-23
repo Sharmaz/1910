@@ -27,10 +27,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 #about {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .Content-text {
   margin: 1rem;
+}
+.Util-title {
+  color: #ff6b00;
+  font-size: 2rem;
+  text-align: center;
 }
 .logo {
   width: 50%;
@@ -73,7 +78,7 @@ figure {
   margin: 2rem 0;
 }
 #contact {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .textarea,
 .text {
@@ -89,7 +94,7 @@ figure {
   }
 }
 #games {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .Posters {
   display: -webkit-box;
