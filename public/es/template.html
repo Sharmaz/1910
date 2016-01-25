@@ -26,16 +26,17 @@
   <section id="about" class="Content">
     <article class="Content-left">
       <h3 class="Util-title">1910 GAMES</h3>
-      <p class="Content-text">1910 GAMES!  es la división dedicada a la creación de  videojuegos de la empresa mexicana 1910 Studios. Fundada en el 2011 comenzó a desarrollar videojuegos para web y gradualmente dio el paso al desarrollo de videojuego para móviles en el cual se especializa actualmente, con el objetivo de traer algo nuevo al mercado  cada videojuego es completamente original  desde el  diseño del modo de juego, los personajes, la música y el arte todo bajo  el slogan de la compañía “La revolución comienza aquí”  que sirve para ofrecer propuestas distintas e innovadoras.</p><img src="./static/images/logo-games.png" class="logo"/>
+      <p class="Content-text">1910 GAMES!  es la división dedicada a la creación de  videojuegos de la empresa mexicana 1910 Studios. </p>
+      <p class="Content-text">Fundada en el 2011 comenzó a desarrollar videojuegos para web y gradualmente dio el paso al desarrollo de videojuego para móviles en el cual se especializa actualmente, con el objetivo de traer algo nuevo al mercado  cada videojuego es completamente original  desde el  diseño del modo de juego, los personajes, la música y el arte todo bajo  el slogan de la compañía “La revolución comienza aquí”  que sirve para ofrecer propuestas distintas e innovadoras.</p><img src="./static/images/logo-games.png" class="logo"/>
     </article>
   </section>
   <section id="contact" class="Content">
     <h3 class="Util-title">CONTACTO</h3>
-    <form class="action">
-      <input type="text" placeholder="Nombre" required="required" class="text"/>
-      <input type="email" placeholder="Email" required="required" class="text"/>
-      <textarea placeholder="Mensaje" class="textarea"></textarea>
-      <button class="submit">Enviar</button>
+    <form method="POST" action="/enviar" class="action">
+      <input type="text" id="name" name="nombre" placeholder="Name" required="required" class="text"/>
+      <input type="email" id="mail" name="mail" placeholder="Email" required="required" class="text"/>
+      <textarea type="textarea" id="message" name="mensaje" placeholder="Message" class="textarea"></textarea>
+      <input type="submit" id="enviar" name="enviar" class="submit"/>
     </form>
   </section>
 </div>

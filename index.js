@@ -57,9 +57,7 @@ web.post('/enviar', function(req, res) {
 	    console.log('Error: ' + err);
 	  }
 	  else {
-	  	res.status(200).json({
-	  		message: 'Listo, mensaje enviado :)'
-	  	})
+	  	res.redirect('/')
 	    console.log('Response: ' + info);
 	  }
 	});

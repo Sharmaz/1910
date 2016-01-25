@@ -58,6 +58,7 @@
 }
 .Content-text {
   margin: 1rem;
+  text-align: justify;
 }
 @media screen and (min-width: 768px) {
   .Content {
@@ -187,6 +188,7 @@ figure {
   width: 80%;
   margin: 1rem 10%;
   color: #fff;
+  text-align: center;
 }
 .AC-container {
   display: -webkit-box;

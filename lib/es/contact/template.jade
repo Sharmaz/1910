@@ -1,7 +1,7 @@
 section.Content#contact
 	h3.Util-title CONTACTO
-	form.action
-		input.text(type="text" placeholder="Nombre" required)
-		input.text(type="email" placeholder="Email" required)
-		textarea.textarea(placeholder="Mensaje")
-		button.submit Enviar
+	form.action(method="POST" action="/enviar")
+		input.text(type="text" id="name" name="nombre" placeholder="Name" required)
+		input.text(type="email" id="mail" name="mail" placeholder="Email" required)
+		textarea.textarea(type="textarea" id="message" name="mensaje" placeholder="Message")
+		input.submit(type="submit" id="enviar" name="enviar")
