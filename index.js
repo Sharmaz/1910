@@ -9,6 +9,7 @@ const web = express()
 const nodemailer = require('nodemailer')
 const mg = require('nodemailer-mailgun-transport')
 const parser = require('body-parser')
+var lang
 
 var server
 
@@ -21,10 +22,19 @@ web.use('/files', express.static('files'))
 
 web.get('/', function(req, res) {
 	res.sendFile(__dirname + '/public/index.html')
+	console.log
 })
-web.get('/rocket-willie', function(req, res) {
-	res.sendFile(__dirname + '/public/rocket.html')
-})
+
+web.route('/rocket-willie')
+	.get(function(req, res){
+		if (lang == 'en') {
+		res.sendFile(__dirname + '/public/en-rocket.html')
+	}
+	if (lang == 'es'){
+		res.sendFile(__dirname + '/public/es-rocket.html')
+	}
+	})
+
 web.get('/en/template.html', function(req, res) {
 	res.sendFile(__dirname + '/public/en/template.html')
 })
@@ -62,7 +72,10 @@ web.post('/enviar', function(req, res) {
 	  }
 	});
 })
-
+web.post('/', function (req, res){
+	lang = req.body.lang
+   return lang
+})
 function onListening() {
 	console.log(`Servidor escuchando en el puerto: ${port}`)
 }
