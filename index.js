@@ -56,8 +56,8 @@ web.post('/enviar', function(req, res) {
 	var nodemailerMailgun = nodemailer.createTransport(mg(auth));
 	nodemailerMailgun.sendMail({
 	  from: mail,
-	  to: 'irae45@gmail.com', // An array if you have multiple recipients.
-	  subject: '1910 Formulario',
+	  to: 'ley@1910-studios.com', // An array if you have multiple recipients.
+	  subject: '1910 Contacto',
 	  text: 'Hey, ' + nombre + ' Tiene un mensaje: ' + mensaje
 	}, function (err, info) {
 	  if (err) {
