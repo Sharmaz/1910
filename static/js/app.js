@@ -1,7 +1,12 @@
 $(document).ready(function() { 
-	$('.Menu').scrollToFixed() 
+      var dispositivo = navigator.userAgent.toLowerCase();
+      if( dispositivo.search(/iphone|ipod|ipad/) > -1 ) {
+        console.log("iOS")
+      }
+      else {
+        $('.Menu').scrollToFixed() 
+      }
 })
-
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
