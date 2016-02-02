@@ -38,6 +38,7 @@ web.route('/rocket-willie')
 web.get('/en/template.html', function(req, res) {
 	res.sendFile(__dirname + '/public/en/template.html')
 })
+
 web.get('/es/template.html', function(req, res) {
 	res.sendFile(__dirname + '/public/es/template.html')
 })
