@@ -110,6 +110,12 @@ figure {
     margin: 0 20%;
   }
 }
+@media screen and (min-width: 1280px) {
+  .logos {
+    width: 40%;
+    margin: 0 30%;
+  }
+}
 .action {
   margin: 0 0 1rem 0;
 }
@@ -222,6 +228,16 @@ figure {
   }
   .Poster-name {
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .Posters {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .AC-container {
+    width: 70%;
+    margin: 0 15%;
   }
 }
 .action {
@@ -359,7 +375,7 @@ h2 {
     font-size: 6.2rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .wrapper {
     margin-top: 8%;
     padding: 0;
@@ -378,14 +394,6 @@ h2 {
   position: -webkit-sticky;
   top: 0;
   width: 100%;
-/*&-element:before
-		content "-"
-		color #BF5000
-		margin-right .5rem
-	&-element:after
-		content "-"
-		color #BF5000
-		margin-left .5rem*/
 }
 .Menu-list {
   margin: 0;
@@ -400,14 +408,6 @@ h2 {
 .Menu-element a {
   color: #fff;
   text-decoration: none;
-}
-.sticky {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  border-top: 0;
 }
 .Rocket {
   background: #0f1228;
